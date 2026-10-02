@@ -1,0 +1,20 @@
+{
+  "name": "microteach",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd front_end && npm install && npm run build",
+    "local:db": "npm --prefix back_end run setup:db",
+    "local:api": "npm --prefix back_end start",
+    "local:web": "npm --prefix front_end run dev"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "multer": "^2.4.0",
+    "mysql2": "^3.24.4",
+    "pg": "^8.23.0"
+  }
+}
